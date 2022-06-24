@@ -139,14 +139,20 @@ Console.WriteLine(valUnboxed2);
 bool boolUnboxed1 = (bool)logic2;
 Console.WriteLine(boolUnboxed1);
 //Example 7
-bool boolUnboxed2 = (bool)dynval3;
+bool logic4 = false;
+object logic5 = logic4;
+bool boolUnboxed2 = (bool)logic5;
 Console.WriteLine(boolUnboxed2);
 //Example 8
-float fvalUnboxed2 = (float)dynval4;
+float fval4 = 49;
+object obj5 = fval4;
+float fvalUnboxed2 = (float)obj5;
 Console.WriteLine(fvalUnboxed2);
 //Example 9
-double dvalUnboxed2 = (double)dynval5;
+object obj6 = dval2;
+double dvalUnboxed2 = (double)obj6;
 Console.WriteLine(dvalUnboxed2);
 //Example 10
-int valUnboxed3 = (int)dynval6;
+object obj7 = val2;
+int valUnboxed3 = (int)obj7;
 Console.WriteLine(valUnboxed3);
