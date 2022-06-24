@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW.01.Casting", "HW.01.Cast
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW.03.QuadraticFormula", "HW.03.QuadraticFormula\HW.03.QuadraticFormula.csproj", "{3428DBC7-1FF6-479D-8DA9-5109A04E7E0A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW.04.Image", "HW.04.Image\HW.04.Image.csproj", "{3C2A8E00-275C-47B8-AC04-CA263CAE249B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3428DBC7-1FF6-479D-8DA9-5109A04E7E0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3428DBC7-1FF6-479D-8DA9-5109A04E7E0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3428DBC7-1FF6-479D-8DA9-5109A04E7E0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C2A8E00-275C-47B8-AC04-CA263CAE249B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C2A8E00-275C-47B8-AC04-CA263CAE249B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C2A8E00-275C-47B8-AC04-CA263CAE249B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C2A8E00-275C-47B8-AC04-CA263CAE249B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
