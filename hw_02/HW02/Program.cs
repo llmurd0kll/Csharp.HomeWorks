@@ -118,33 +118,35 @@ dynamic dynval6 = val2;
 Console.WriteLine(dynval6);
 
 ////Unboxing
-//
+//Example 1
 int valUnboxed1 = (int)obj1;
 Console.WriteLine(valUnboxed1);
-//
+//Example 2
 float fvalUnboxed1 = (float)obj2;
 Console.WriteLine(fvalUnboxed1);
-//
+//Example 3
 double dvalUnboxed1 = (double)obj3;
 Console.WriteLine(dvalUnboxed1);
-//
-char charvalUnboxed1 = (char)dynval1;
-Console.WriteLine(charvalUnboxed1);
-//
+//Example 4
+int val3 = 169;
+object obj4 = val3;
+int valUnboxed4 = (int)obj4;
+Console.WriteLine(valUnboxed4);
+//Example 5
 int valUnboxed2 = (int)dynval2;
 Console.WriteLine(valUnboxed2);
-//
+//Example 6
 bool boolUnboxed1 = (bool)logic2;
 Console.WriteLine(boolUnboxed1);
-//
+//Example 7
 bool boolUnboxed2 = (bool)dynval3;
 Console.WriteLine(boolUnboxed2);
-//
+//Example 8
 float fvalUnboxed2 = (float)dynval4;
 Console.WriteLine(fvalUnboxed2);
-//
+//Example 9
 double dvalUnboxed2 = (double)dynval5;
 Console.WriteLine(dvalUnboxed2);
-//
+//Example 10
 int valUnboxed3 = (int)dynval6;
 Console.WriteLine(valUnboxed3);
