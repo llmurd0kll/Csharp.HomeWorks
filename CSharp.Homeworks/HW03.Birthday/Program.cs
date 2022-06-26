@@ -18,4 +18,3 @@ else
     int yearOld = yearToday - year;
     Console.WriteLine($"It's age: {yearOld}");
 }
-
