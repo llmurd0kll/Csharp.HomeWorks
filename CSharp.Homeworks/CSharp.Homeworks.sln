@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW.03.QuadraticFormula", "H
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW.04.Image", "HW.02\HW.04.Image\HW.04.Image.csproj", "{84869AD6-FD5A-4B2F-9AE7-7861B105C723}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WH.04.Operators1", "WH.04.Operators1\WH.04.Operators1.csproj", "{704CB45D-173E-438F-825B-6A6F18AB8929}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{84869AD6-FD5A-4B2F-9AE7-7861B105C723}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84869AD6-FD5A-4B2F-9AE7-7861B105C723}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84869AD6-FD5A-4B2F-9AE7-7861B105C723}.Release|Any CPU.Build.0 = Release|Any CPU
+		{704CB45D-173E-438F-825B-6A6F18AB8929}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{704CB45D-173E-438F-825B-6A6F18AB8929}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{704CB45D-173E-438F-825B-6A6F18AB8929}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{704CB45D-173E-438F-825B-6A6F18AB8929}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
