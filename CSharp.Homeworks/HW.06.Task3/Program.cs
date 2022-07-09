@@ -1,92 +1,10 @@
-﻿using System.Text.RegularExpressions;
-
-Console.WriteLine("Enter your line: ");
+﻿Console.WriteLine("Enter your line: ");
 string text = Console.ReadLine();
 
-string temp = "0";
-string temp1= "0";
-int sum = 0;
-int umn = 1;
-int del = 1;
-
-
-/*for (int i = 0; i < text.Length; i++)
-{
-    char ch = text[i];
-
-    if (char.IsDigit(ch))
-    {
-        temp += ch;
-    }
-    else
-    {
-        if (text[i] == '-')
-        {
-            if (char.IsDigit(ch))
-            {
-                temp1 += ch;
-            }
-            else
-            {
-                int sign = int.Parse(temp) - int.Parse(temp1);
-            }
-        }
-        if (text[i] == '*')
-        {
-            if (char.IsDigit(ch))
-            {
-                temp1 += ch;
-            }
-            else
-            {
-                umn = int.Parse(temp) * umn;
-                //int umnres = umn * int.Parse(temp);
-            }
-        }
-        if (text[i] == '/')
-        {
-            if (char.IsDigit(ch))
-            {
-                temp1 += ch;
-            }
-            else
-            {
-                int sign = int.Parse(temp) / int.Parse(temp1);
-            }
-        }
-        if (text[i] == '+')
-        {
-            if (char.IsDigit(ch))
-            {
-                temp1 += ch;
-            }
-            else
-            {
-                int sign = int.Parse(temp) + int.Parse(temp1);
-                // sum += int.Parse(temp);
-                 //temp = "0";
-                 //int result = sum + int.Parse(temp);
-                 //Console.WriteLine(result);
-            }
-        }
-
-        // increment sum by number found earlier
-        // (if any)
-        //sum += int.Parse(temp);
-
-        // reset temporary string to empty
-        temp = "0";
-    }
-}
-
-// atoi(temp.c_str()) takes care of trailing
-// numbers
-int result = sum + int.Parse(temp);
-
-
-Console.WriteLine(result);
-*/
-
+///<summary>
+/// FindSum() method used to find amount.
+///</summary>
+///<param name="text">Text wich was entered by user</param>
 void FindSum(string text)
 {
    
@@ -110,7 +28,12 @@ void FindSum(string text)
       int result = sum + int.Parse(temp);
     Console.WriteLine(result);
 }
-void FindMin(string text)
+
+///<summary>
+/// FindMin() method used to find difference.
+///</summary>
+///<param name="text">Text wich was entered by user</param>
+void FindDif(string text)
 {
      string temp = "0";
      int sum = 0;
@@ -132,7 +55,12 @@ void FindMin(string text)
     int result = sum - int.Parse(temp);
     Console.WriteLine(result);
 }
-void FindDel(string text)
+
+///<summary>
+/// FindDel() method used to find division.
+///</summary>
+///<param name="text">Text wich was entered by user</param>
+void FindDiv(string text)
 {
     string temp = "0";
     int sum = 0;
@@ -154,6 +82,11 @@ void FindDel(string text)
     int result = sum / int.Parse(temp);
     Console.WriteLine(result);
 }
+
+///<summary>
+/// FindMult() method used to find multiplication.
+///</summary>
+///<param name="text">Text wich was entered by user</param>
 void FindMult(string text)
 {
     string temp = "0";
@@ -175,18 +108,20 @@ void FindMult(string text)
     int result = sum * int.Parse(temp);
     Console.WriteLine(result);
 }
+
 Console.WriteLine("Select operator between: -,+,/,*, witch you entered");
 string choose = Console.ReadLine();
+
 switch (choose)
 {
     case "+":
         FindSum(text);
         break;
     case "-":
-        FindMin(text);
+        FindDif(text);
         break;
     case "/":
-        FindDel(text);
+        FindDiv(text);
         break;
     case "*":
         FindMult(text);
