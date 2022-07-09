@@ -1,8 +1,9 @@
 ﻿using System.Globalization;
+using System.Text;
 
 double val = 1;
 var now = DateTime.Now;
-
+Console.OutputEncoding = Encoding.Unicode;
 var enUs = new CultureInfo("en-US");
 CultureInfo.DefaultThreadCurrentCulture = enUs;
 Console.WriteLine($"Current culture USA: {CultureInfo.CurrentCulture.Name}");
