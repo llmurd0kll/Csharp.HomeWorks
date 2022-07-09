@@ -71,12 +71,12 @@ void Task4 (string text)
     Array.Sort(splitText, (x, y) => y.Length.CompareTo(x.Length));
     Console.WriteLine(string.Join(" ", splitText));
 }
-Console.WriteLine("It's is first task: ");
+Console.WriteLine("It' the first task: ");
 LongWordDelete(text);
-Console.WriteLine("It's is second task: ");
+Console.WriteLine("It's second task: ");
 ReplacedWords(text);
-Console.WriteLine("It's is third task: ");
+Console.WriteLine("It's third task: ");
 AmountOfSigns(text);
 AmountOfLetters(text);
-Console.WriteLine("It's is 4 task: ");
+Console.WriteLine("It's 4 task: ");
 Task4(text);
