@@ -55,7 +55,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW.09.Task2", "HW.09.Task2\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW.09.Task3", "HW.09.Task3\HW.09.Task3.csproj", "{0F8F5201-73F5-4DAF-B695-A055ED4BD7EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW.09.Booking.Com", "HW.09.Booking.Com\HW.09.Booking.Com.csproj", "{A1B7F6BA-E89E-49ED-B306-06D17687BF4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW.09.Booking.Com", "HW.09.Booking.Com\HW.09.Booking.Com.csproj", "{A1B7F6BA-E89E-49ED-B306-06D17687BF4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW.11.RepositoryPattern", "HW.11.RepositoryPattern\HW.11.RepositoryPattern.csproj", "{CB01BA7D-D2EE-4627-9075-737E542C0075}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -171,6 +173,10 @@ Global
 		{A1B7F6BA-E89E-49ED-B306-06D17687BF4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1B7F6BA-E89E-49ED-B306-06D17687BF4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1B7F6BA-E89E-49ED-B306-06D17687BF4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB01BA7D-D2EE-4627-9075-737E542C0075}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB01BA7D-D2EE-4627-9075-737E542C0075}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB01BA7D-D2EE-4627-9075-737E542C0075}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB01BA7D-D2EE-4627-9075-737E542C0075}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
