@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HW._12.PayrollSystem
 {
-    public class TeamLeader : Engineer
+    public class Architect : Engineer
     {
     }
 }
