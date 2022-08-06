@@ -15,6 +15,9 @@ namespace HW._12.PayrollSystem
             Console.WriteLine("Please enter your engineer");
             Engineer engineer = new Engineer();
 
+            Console.WriteLine($"Select your title");
+            engineer.TitleSelection(); 
+
             Console.WriteLine("New ID created");
             engineer.Id = Guid.NewGuid();
 
@@ -38,6 +41,9 @@ namespace HW._12.PayrollSystem
 
             Console.WriteLine("Please enter Company");
             engineer.Company = Console.ReadLine();
+
+            Console.WriteLine("Sallary added");
+            engineer.SallaryCount();
 
             engineers.Add(engineer);
         }
@@ -141,5 +147,7 @@ namespace HW._12.PayrollSystem
                 Console.WriteLine($"These are all your engineers:\n {engineerPers.ToString()}");
             }
         }
+
+        
     }
 }

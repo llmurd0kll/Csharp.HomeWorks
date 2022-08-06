@@ -1,8 +1,18 @@
 ﻿using HW._12.PayrollSystem;
 
+Dictionary<int, string> titles = new Dictionary<int, string>()
+       {
+            { 1, "Junior Developer" },
+            { 2, "Middle Developer" },
+            { 3, "Senior Developer" },
+            { 4, "Team Leader" },
+            { 5, "Architect" }
+       };
+
 EngineerRepository engineer = new EngineerRepository(); 
 
 Selection();
+
 
     void Selection()
     {
@@ -18,6 +28,7 @@ Selection();
         {
             case "1":
                 engineer.CreateEngineer();
+            
                 Selection();
                 break;
             case "2":
