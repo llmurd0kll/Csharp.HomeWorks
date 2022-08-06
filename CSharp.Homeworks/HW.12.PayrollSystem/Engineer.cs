@@ -81,7 +81,7 @@ namespace HW._12.PayrollSystem
 
         public override string ToString()
         {
-            return $"Company: {Company}, Full Name: {FirstName} {LastName}, Experience: {Experience}, Title {Title}: , Salary: {Sallary}, GitHub: {GitHubAccount} ";
+            return $"Company: {Company}, Full Name: {FirstName} {LastName}, Experience: {Experience}, Title: {Title} , Salary: {Sallary}, GitHub: {GitHubAccount} ";
         }
     }
 }
