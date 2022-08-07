@@ -78,9 +78,42 @@ namespace HW._12.PayrollSystem
             }
         }
 
+        public void GetResponsibilities()
+        {
+            if (Title.Equals("Junior Developer"))
+            {
+                Responsibilities = "Data Bases, O/RM, ASP.NET MVC, WPF, Web Stack";
+
+            }
+            else if (Title.Equals("Middle Developer"))
+            {
+                Responsibilities = "Hard Skills, SASS/SCSS/Less/PostCSS, RESTful interfaces, SOLID, 3 pillars of OOP";
+            }
+            else if (Title.Equals("Senior Developer"))
+            {
+                Responsibilities = "Development and design of client-server software, Knowledg of OOP, OOD, Knowledge of the basic principles of computer networks and protocols(IP, TCP, UDP)," +
+                    "Strong knowledge of design patterns, The ability to clearly and concisely express one's thoughts in written and oral form in English;";
+            }
+            else if (Title.Equals("Team Leader"))
+            {
+                Responsibilities = "Taking care of your team, Ensure the professional and career growth of your team, Setting goals and evaluating progress," +
+                    " Conflict resolution, Organization of team events";
+            }
+            else if (Title.Equals("Architect"))
+            {
+                Responsibilities = "Clarification of project requirements and communication with the customer, Technological research and prototyping, Архитектура конечного продукта," +
+                    " General context (helicopter view), Technical knowledge";
+            }
+        }
+
         public override string ToString()
         {
-            return $"Company: {Company}, Full Name: {FirstName} {LastName}, Experience: {Experience}, Title: {Title} , Salary: {Sallary}, GitHub: {GitHubAccount} ";
+            return $"Company: {Company}, Full Name: {FirstName} {LastName}, \n" +
+                $"Experience: {Experience}, \n" +
+                $"Title: {Title} , \n" +
+                $"Salary: {Sallary}, \n" +
+                $"GitHub: {GitHubAccount}, \n" +
+                $"Your responsibilities: {Responsibilities} \n";
         }
     }
 }

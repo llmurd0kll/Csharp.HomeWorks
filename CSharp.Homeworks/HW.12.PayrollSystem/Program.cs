@@ -13,13 +13,12 @@ EngineerRepository engineer = new EngineerRepository();
 
 Selection();
 
-
     void Selection()
     {
         Console.WriteLine("Please select your next action:\n To create engineer select: 1.\n " +
             "To see all your engineers select: 2.\n " +
-            "To update your moto select: 3.\n " +
-            "To delete your moto select: 4.\n " +
+            "To update your engineers: 3.\n " +
+            "To delete your engineers: 4.\n " +
             "To exit select: 0");
 
         var answer = Console.ReadLine();
@@ -28,7 +27,6 @@ Selection();
         {
             case "1":
                 engineer.CreateEngineer();
-            
                 Selection();
                 break;
             case "2":
@@ -42,8 +40,8 @@ Selection();
             case "4":
                 engineer.DeleteEngineer();
                 Selection();
-                break;
-            case "0":
+                break;            
+        case "0":
                 break;
             default:
                 Console.WriteLine("Wrong selection");

@@ -45,6 +45,9 @@ namespace HW._12.PayrollSystem
             Console.WriteLine("Sallary added");
             engineer.SallaryCount();
 
+            Console.WriteLine("Responsibilities added");
+            engineer.GetResponsibilities();
+
             engineers.Add(engineer);
         }
 
