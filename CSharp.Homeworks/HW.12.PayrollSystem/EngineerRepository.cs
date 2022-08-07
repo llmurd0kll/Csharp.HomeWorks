@@ -27,11 +27,11 @@ namespace HW._12.PayrollSystem
             Console.WriteLine("Please enter Last Name");
             engineer.LastName = Console.ReadLine();
 
-           /* Console.WriteLine("Please enter birthday in format: dd.mm.yyyy");
+            Console.WriteLine("Please enter birthday in format: dd.mm.yyyy");
             DateTime birthday = new DateTime();
             birthday.ToShortDateString();
             birthday = DateTime.Parse(Console.ReadLine());
-            engineer.DayOfBirth = birthday;*/
+            engineer.DayOfBirth = birthday;
 
             Console.WriteLine("Please enter Experience");
             engineer.Experience = Int32.Parse(Console.ReadLine());
@@ -52,7 +52,7 @@ namespace HW._12.PayrollSystem
         {
             try
             {
-                Console.WriteLine("Enter the id of moto you whant to find: ");
+                Console.WriteLine("Enter the id of employee you whant to find: ");
                 int userAnswer = Int32.Parse(Console.ReadLine());
                 foreach (var engineerPers in engineers)
                 {
@@ -78,7 +78,7 @@ namespace HW._12.PayrollSystem
         {
             try 
             {
-                Console.WriteLine("Enter the id of item which you want to update");
+                Console.WriteLine("Enter the id of employee which you want to update");
                 int userAnswer = int.Parse(Console.ReadLine());
 
                 foreach (var engineerPers in engineers)
@@ -142,10 +142,9 @@ namespace HW._12.PayrollSystem
                             Console.WriteLine(engineerPers);
                         }
                     }
-                
                     else
                     {
-                        Console.WriteLine("There is no item with this ID");
+                        Console.WriteLine("There is no employee with this ID");
                         throw new Exception("DeveloperNotFoundException");
                     }
                 }
@@ -171,7 +170,5 @@ namespace HW._12.PayrollSystem
                 Console.WriteLine($"Engineer description :\n {engineerPers.ToString()}");               
             }
         }
-
-        
     }
 }

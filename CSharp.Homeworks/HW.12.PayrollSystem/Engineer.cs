@@ -52,7 +52,6 @@ namespace HW._12.PayrollSystem
                     break;
             }
         }
-        
 
         public void SallaryCount()
         {
