@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace HW._13.Task2
 {
-    public class Song
+    public class Song : ISongService
     {
         public string SongName { get; set; }
         public double SongDuration { get; set; }
@@ -16,12 +16,18 @@ namespace HW._13.Task2
         public DateTime SongYear { get; set; }
         public Genre SongGenre { get; set; }
 
-        public enum Genre
+        [Flags]
+        public enum Genre : short
         {
-            classic = 1,
-            pop,
-            rock,
-            unselected
+            unselected,
+            Classic = 1,
+            Pop = 2,
+            Rock = 3,
+            Opera = 4,
+            Funk = 5,
+            Hiphop = 6,
+            Country = 7,
+            Reggae = 8
         }
 
         public List<Song> songs = new List<Song>();
@@ -46,7 +52,9 @@ namespace HW._13.Task2
             Console.WriteLine("Please enter song Author");
             song.SongAuthor = Console.ReadLine();
 
-            Console.WriteLine("Please enter the genre: 1 - calssic, 2 - pop, 3 - rock, all others inputs will be named as 'unselected'!");
+            Console.WriteLine("Please enter the genre: ");
+            song.SongService();
+            Console.WriteLine("\nAll others inputs will be named as 'unselected'!");
             var userSongGenre = Console.ReadLine();
             if(Int32.Parse(userSongGenre).Equals(true))
             {   
@@ -69,6 +77,9 @@ namespace HW._13.Task2
 
             Console.WriteLine("Using System.Text.Json: \n");
             song.JsonSerialize();
+
+            
+            
 
             songs.Add(song);
         }
@@ -97,6 +108,16 @@ namespace HW._13.Task2
         public override string ToString()
         {
             return $"Title: {SongName}, Minutes: {SongDuration}, Year: {SongYear}, Genre: {SongGenre} ";
+        }
+
+        public void SongService()
+        {
+            // Display all combinations of values, and invalid values.
+            Console.WriteLine(
+                 "\nAll possible combinations, please select which better suits you:");
+            for (int val = 0; val <= 16; val++)
+                Console.WriteLine("{0,3} - {1:G}", val, (Genre)val);
+
         }
     }
 }
