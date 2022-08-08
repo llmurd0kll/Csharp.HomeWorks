@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Newtonsoft.Json;
 using System.Text.Json;
 using System.Threading.Tasks;
 
@@ -56,14 +57,18 @@ namespace HW._13.Task2
                 song.SongGenre = Genre.unselected;
             }
 
-            string json = JsonSerializer.Serialize(song);
+            Console.WriteLine("Using Newtonsoft Json \n");
 
-            Console.WriteLine("\n");
+            string json = JsonConvert.SerializeObject(song);
+
             Console.WriteLine("After serialie to json \n" + json + "\n");
 
-            Song? restoredSong = JsonSerializer.Deserialize<Song>(json);
+            Song? restoredSong = JsonConvert.DeserializeObject<Song>(json);
 
             Console.WriteLine("After deserialize to json \n" + restoredSong);
+
+            Console.WriteLine("Using System.Text.Json: \n");
+            song.JsonSerialize();
 
             songs.Add(song);
         }
@@ -75,6 +80,18 @@ namespace HW._13.Task2
             {
                 Console.WriteLine($"Engineer description :\n {songData.ToString()}");
             }
+        }
+
+        public void JsonSerialize()
+        {
+            var song = new Song();
+            string jsonSystem = System.Text.Json.JsonSerializer.Serialize<Song>(song);
+
+            Console.WriteLine("After serialie to json \n" + jsonSystem + "\n");
+
+            Song? restoredSong = System.Text.Json.JsonSerializer.Deserialize<Song>(jsonSystem);
+
+            Console.WriteLine("After deserialize to json \n" + restoredSong);
         }
 
         public override string ToString()
