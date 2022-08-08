@@ -78,7 +78,7 @@ namespace HW._13.Task2
             Console.WriteLine("These are all your songs data");
             foreach (var songData in songs)
             {
-                Console.WriteLine($"Engineer description :\n {songData.ToString()}");
+                Console.WriteLine($"Song description :\n {songData.ToString()}");
             }
         }
 
