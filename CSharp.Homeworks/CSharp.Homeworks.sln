@@ -61,9 +61,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW.11.RepositoryPattern", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW.12.PayrollSystem", "HW.12.PayrollSystem\HW.12.PayrollSystem.csproj", "{1CE081CA-0538-494E-B718-C3B646151B62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW.13.Task1", "HM.13.Task1\HW.13.Task1.csproj", "{78D0042D-EF96-4D7E-9B8F-0169EED71671}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW.13.Task1", "HM.13.Task1\HW.13.Task1.csproj", "{78D0042D-EF96-4D7E-9B8F-0169EED71671}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW.13.Task2", "HW.13.Task2\HW.13.Task2.csproj", "{56EC20C4-84FF-45D1-9380-A45652012068}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW.13.Task2", "HW.13.Task2\HW.13.Task2.csproj", "{56EC20C4-84FF-45D1-9380-A45652012068}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW.15.Task1", "HW.15.Task1\HW.15.Task1.csproj", "{0CF9072F-DF53-4ECA-BCEE-35FA300F5B7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -195,6 +197,10 @@ Global
 		{56EC20C4-84FF-45D1-9380-A45652012068}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56EC20C4-84FF-45D1-9380-A45652012068}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56EC20C4-84FF-45D1-9380-A45652012068}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CF9072F-DF53-4ECA-BCEE-35FA300F5B7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CF9072F-DF53-4ECA-BCEE-35FA300F5B7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CF9072F-DF53-4ECA-BCEE-35FA300F5B7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CF9072F-DF53-4ECA-BCEE-35FA300F5B7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
